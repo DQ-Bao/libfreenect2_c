@@ -1,0 +1,40 @@
+[
+ {
+  "directory": "D:\\Dev\\libfreenect2_c",
+  "arguments": [
+   "g++",
+   "-Wall",
+   "-Wextra",
+   "-Wpedantic",
+   "-std=c++17",
+   "-Iinclude",
+   "-MMD",
+   "-MP",
+   "-c",
+   "libfreenect2_c.cpp",
+   "-o",
+   "libfreenect2_c.o"
+  ],
+  "file": "libfreenect2_c.cpp"
+ },
+ {
+  "directory": "D:\\Dev\\libfreenect2_c",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Wpedantic",
+   "-I.",
+   "-Iinclude",
+   "examples/main.c",
+   "-lfreenect2_c",
+   "-lfreenect2",
+   "-lraylib",
+   "-L.",
+   "-Llib",
+   "-o",
+   "main.exe"
+  ],
+  "file": "examples/main.c"
+ }
+]

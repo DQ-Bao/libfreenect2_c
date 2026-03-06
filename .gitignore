@@ -1,0 +1,5 @@
+*.exe
+*.dll
+.cache/
+!libfreenect2.dll
+!turbojpeg.dll
