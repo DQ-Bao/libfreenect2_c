@@ -44,6 +44,10 @@ void fn2_device_set_color_frame_listener(fn2_device* dev, void* listener) {
     dev->impl->setColorFrameListener(static_cast<libfreenect2::FrameListener*>(listener));
 }
 
+void fn2_device_set_ir_and_depth_frame_listener(fn2_device* dev, void* listener) {
+    dev->impl->setIrAndDepthFrameListener(static_cast<libfreenect2::FrameListener*>(listener));
+}
+
 bool fn2_device_start(fn2_device* dev, bool rgb, bool depth) { return dev->impl->startStreams(rgb, depth); }
 
 bool fn2_device_stop(fn2_device* dev) { return dev->impl->stop(); }

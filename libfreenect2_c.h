@@ -152,6 +152,8 @@ fn2_device* fn2_open_default_device(fn2_context* ctx);
 
 void fn2_device_set_color_frame_listener(fn2_device* dev, void* listener);
 
+void fn2_device_set_ir_and_depth_frame_listener(fn2_device* dev, void* listener);
+
 // Start data processing with or without some streams.
 // All configurations must only be called before start() or after stop().
 // FrameListener will receive frames when the device is running.
